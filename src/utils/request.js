@@ -16,13 +16,13 @@ async function getAnswers() {
       type: "list",
       name: "buildType",
       message: "请选择构建方式",
-      choices: ["webpack", "rollup", "vite"],
+      choices: ["vite", "webpack", "rollup"],
     },
     {
       type: "list",
       name: "language",
       message: "请选择语言",
-      choices: ["javascript", "typescript"],
+      choices: ["typescript","javascript"],
     },
     {
       type: "list",
