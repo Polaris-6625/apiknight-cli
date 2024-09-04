@@ -16,13 +16,13 @@ async function getAnswers() {
       type: "list",
       name: "buildType",
       message: "请选择构建方式",
-      choices: ["vite", "webpack", "rollup"],
+      choices: ["vite", "webpack"],
     },
     {
       type: "list",
       name: "language",
       message: "请选择语言",
-      choices: ["typescript","javascript"],
+      choices: ["typescript"],
     },
     {
       type: "list",
@@ -40,13 +40,13 @@ async function getAnswers() {
         type: "list",
         name: "uiFramework",
         message: "请选择UI框架",
-        choices: ["antd", "无"],
+        choices: ["antd"],
     },
     {
         type: "list",
         name: "storeName",
         message: "请选择使用的状态管理库",
-        choices: ["@apiknight/store(👍)", "无"],
+        choices: ["@apiknight/store(👍)"],
     }
   ];
   return inquirer.prompt(questions);
